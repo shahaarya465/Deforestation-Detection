@@ -1,6 +1,6 @@
 # 🛰️ Deforestation Detection using Satellite Image Translation
 
-This repository contains the implementation of **AIML305 - Project II (SGP-2)**. The project is a full-stack web application that uses a deep learning model to translate Sentinel-1 (SAR) radar imagery into Sentinel-2 optical imagery to detect and analyze deforestation over time.
+This repository contains the implementation of **Deforestation Detection using Satellite Image Translation**. The project is a full-stack web application that uses a deep learning model to translate Sentinel-1 (SAR) radar imagery into Sentinel-2 optical imagery to detect and analyze deforestation over time.
 
 ---
 
@@ -20,7 +20,7 @@ The application is composed of three main components:
 
 1.  **Frontend**: A responsive web dashboard built with **React** and styled with **Tailwind CSS**. It allows users to upload two images, send them to the backend for processing, and displays the returned analysis in a clear, organized format.
 2.  **Backend**: A powerful API built with **FastAPI** (Python). It handles image processing, loads the pretrained PyTorch model, performs the image-to-image translation, calculates vegetation changes, and serves the results to the frontend.
-3.  **Machine Learning Model**: A **Pix2Pix GAN** trained in the `SGP_2.ipynb` notebook. This model is the core of the application, responsible for translating the input radar imagery into optical imagery.
+3.  **Machine Learning Model**: A **Pix2Pix GAN** trained in the `deforestation_detection.ipynb` notebook. This model is the core of the application, responsible for translating the input radar imagery into optical imagery.
 
 ---
 
@@ -31,8 +31,8 @@ To get the web application running locally, you need to start both the backend s
 ### **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/shahaarya465/SGP-2.git
-cd SGP-2
+git clone https://github.com/shahaarya465/Deforestation-Detection.git
+cd Deforestation-Detection
 ```
 
 ### **2. Set Up and Run the Backend**
@@ -86,7 +86,7 @@ Your frontend is now running, typically at `http://localhost:5173`. Open this UR
 
 ## 📦 Pretrained Models
 
-We provide pretrained models for inference. Download them from the [Releases](https://github.com/shahaarya465/SGP-2/releases).
+We provide pretrained models for inference. Download them from the [Releases](https://github.com/shahaarya465/Deforestation-Detection/releases).
 
 - **`generator.pth`**: The trained Generator network, required for the backend to run.
 - **`discriminator.pth`**: The trained Discriminator network, used during the model's training phase.
@@ -106,5 +106,5 @@ The original model's performance was evaluated by comparing generated images wit
 
 ## 👥 Contributors
 
--   Aarya Shah (23AIML064)
--   Vansh Mehta (23AIML074)
+-   Aarya Shah
+-   Vansh Mehta
